@@ -1,16 +1,15 @@
 import time
 from datetime import datetime
 
-# Path to the hosts file (Windows & Linux/Mac)
+# Path to the hosts file (Windows )
 hosts_path = r"C:\Windows\System32\drivers\etc\hosts"  # Windows
-# hosts_path = "/etc/hosts"  # Linux/Mac
 
 redirect_ip = "127.0.0.1"  # Redirects the blocked websites
 blocked_websites = ["www.facebook.com", "facebook.com", "www.youtube.com", "youtube.com"]
 
-# Define blocking hours (e.g., 9 AM to 5 PM)
-start_hour = 9
-end_hour = 17
+# Define blocking hours (e.g., 9 PM to 5 AM)
+start_hour = 21
+end_hour = 5
 
 while True:
     current_hour = datetime.now().hour
